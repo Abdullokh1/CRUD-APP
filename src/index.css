@@ -20,11 +20,30 @@ footer{
   z-index: 222;
 }
 
+.wrapper-admin{
+  display: flex;
+  align-items: center;
+  height: 82vh;
+}
+
 a{
   text-decoration: none;
 }
 
-.admin{
-  position: relative;
-  top: 80px;
+td{
+  font-weight: 500;
+}
+
+td:last-child{
+  display: flex;
+  justify-content: end;
+}
+
+.active-link{
+  border-bottom: 2px solid #fff;
+  color: #fff;
+}
+
+.active-link:hover{
+  color: #fff;
 }

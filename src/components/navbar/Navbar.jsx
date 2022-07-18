@@ -7,17 +7,17 @@ function Navbar() {
       <nav>
         <ul className='nav__ul d-flex justify-content-around w-25 list-unstyled text-white'>
           <li>
-            <NavLink className={({isActive}) => isActive ? 'text-white' : 'text-warning'} to='/'>
+            <NavLink className={({isActive}) => isActive ? 'active-link' : 'text-white'} to='/'>
               Dashboard
             </NavLink>
           </li>
           <li>
-            <NavLink className={({isActive}) => isActive ? 'text-white' : 'text-warning'} to='/Books'>
+            <NavLink className={({isActive}) => isActive ? 'active-link' : 'text-white'} to='/Books'>
               Books
             </NavLink>
           </li>
           <li>
-            <NavLink className={({isActive}) => isActive ? 'text-white' : 'text-warning'} to='/Control'>
+            <NavLink className={({isActive}) => isActive ? 'active-link' : 'text-white'} to='/Control'>
               Control panel
             </NavLink>
           </li>
