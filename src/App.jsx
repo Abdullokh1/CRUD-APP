@@ -7,6 +7,8 @@ import Footer from './components/footer/Footer'
 import Login from './components/Login/Login'
 import Control from './components/Control/Control'
 import BookEdit from './components/BookEdit/BookEdit'
+import books from './api/API'
+import { useEffect, useState } from 'react'
 
 
 function App() {
@@ -15,22 +17,17 @@ function App() {
     <>
      <BrowserRouter>
        <Navbar/>
-       
        <main>
         <Routes>
-
           <Route>
             <Route path='/' element={<Home/>}/>
             <Route path='/Books' element={<Books/>}/>
             <Route path='/Control' element={<Control/>}/>
             <Route path='/BookEdit/:id' element={<BookEdit/>}/>
-
           </Route>
-
           <Route path='/Login' element={<Login/>}/>
         </Routes>
        </main>
-
        <Footer/>
      </BrowserRouter>
     </>

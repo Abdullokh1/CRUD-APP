@@ -1,11 +1,9 @@
-import { Link, useParams } from "react-router-dom";
-
+import { Link } from "react-router-dom";
 import { toast, ToastContainer } from "react-toastify";
 import books from "../../../api/API";
 
 function BookItems({ item, index }) {
   const { name, author, price, id } = item;
-  const paramsLocation = useParams()
 
   const deleteData = (id) => {
     if (window.confirm("Are you sure")) {

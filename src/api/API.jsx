@@ -13,7 +13,7 @@ const books = {
    return axios.post(URL, params)
   },
 
-  updataBooks: (params, ID) =>{
+  updateBooks: (ID, params) =>{
     axios.put(`${URL}/${ID}`, params)
   },
 
